@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif; }
+
+body {
+  background-image: url(../images/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  body header {
+    background-color: #292929; }
+    body header nav ul {
+      display: flex;
+      background-color: #292929;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center; }
+      body header nav ul li {
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin: 0.5rem; }
+    body header nav img {
+      height: 4rem;
+      transition: 1s; }
+    body header nav img:hover {
+      transform: scale(1.1); }
+    body header nav .nav-link {
+      color: #d1d1aa; }
+    body header nav .nav-link:hover {
+      color: white; }
+  body main h1 {
+    text-transform: uppercase;
+    color: #d1d1aa;
+    grid-area: titulo;
+    text-align: center; }
+  body main #carouselExampleIndicators {
+    width: 700px; }
+  body main div.subMenu {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center; }
+    body main div.subMenu li img {
+      width: 12rem;
+      height: 12rem; }
+  body main .ultIngresos {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    grid-template-areas: "titulo2 titulo2 titulo2 titulo2 titulo2" "izq2 ingreso1 ingreso2 ingreso3 der2";
+    align-items: center;
+    gap: 1rem; }
+    body main .ultIngresos h2 {
+      grid-area: titulo2;
+      text-transform: uppercase;
+      color: #d1d1aa;
+      text-align: center; }
+    body main .ultIngresos .flecha img {
+      height: 1.5rem;
+      width: 1.5rem; }
+    body main .ultIngresos #f1 {
+      grid-area: izq2;
+      justify-self: end; }
+    body main .ultIngresos #f2 {
+      grid-area: der2;
+      justify-self: start; }
+    body main .ultIngresos .ingreso img {
+      width: 10rem;
+      height: 10rem; }
+    body main .ultIngresos #i1 {
+      grid-area: ingreso1;
+      justify-self: center; }
+    body main .ultIngresos #i2 {
+      grid-area: ingreso2;
+      justify-self: center; }
+    body main .ultIngresos #i3 {
+      grid-area: ingreso3;
+      justify-self: center; }
+  body footer {
+    margin: 2rem;
+    text-align: center; }
+    body footer img {
+      width: 2rem;
+      height: 2rem; }
+    body footer h3 {
+      font-size: 1rem;
+      color: #d1d1aa; }
